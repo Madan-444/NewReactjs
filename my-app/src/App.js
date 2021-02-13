@@ -4,7 +4,10 @@ import Counter from './Components/Counter'
 import EventBind from './Components/EventBind'
 // import FunctionClick from './Components/FunctionClick'
 import Message from './Components/Message'
+import NameList from './Components/NameList'
 import ParentComponent from './Components/ParentComponent'
+import Stylesheet from './Components/Stylesheet'
+import UserGreeting from './Components/UserGreeting'
 import Welcome from './Components/Welcome'
 import Greet from './Greet'
 
@@ -19,7 +22,10 @@ function App() {
       {/* <FunctionClick /> */}
       {/* <ClassClick /> */}
       {/* <EventBind /> */}
-      <ParentComponent />
+      {/* <ParentComponent /> */}
+      {/* <UserGreeting /> */}
+      {/* <NameList /> */}
+      <Stylesheet property= {true} />
     </div>
   )
 }
