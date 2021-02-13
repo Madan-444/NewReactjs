@@ -15,6 +15,9 @@ import Stylesheet from './Components/Stylesheet'
 import UserGreeting from './Components/UserGreeting'
 import Welcome from './Components/Welcome'
 import Greet from './Greet'
+import ClassCounter from './HookComponents/ClassCounter'
+import HookCounter from './HookComponents/HookCounter'
+import HookCounterTwo from './HookComponents/HookCounterTwo'
 
 function App() {
   return (
@@ -35,7 +38,10 @@ function App() {
       {/* <ClickCounter /> */}
       {/* <HoverCounter /> */}
       {/* <PostList /> */}
-      <PostForm />
+      {/* <PostForm /> */}
+      {/* <ClassCounter /> */}
+      {/* <HookCounter /> */}
+      <HookCounterTwo />
     </div>
   )
 }
