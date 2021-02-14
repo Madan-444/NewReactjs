@@ -17,9 +17,11 @@ import Welcome from './Components/Welcome'
 import Greet from './Greet'
 import ClassCounter from './HookComponents/ClassCounter'
 import HookCounter from './HookComponents/HookCounter'
+import HookCounter1 from './HookComponents/HookCounter1'
 import HookCounterFour from './HookComponents/HookCounterFour'
 import HookCounterTree from './HookComponents/HookCounterTree'
 import HookCounterTwo from './HookComponents/HookCounterTwo'
+import HookMouse from './HookComponents/HookMouse'
 
 function App() {
   return (
@@ -45,7 +47,9 @@ function App() {
       {/* <HookCounter /> */}
       {/* <HookCounterTwo /> */}
       {/* <HookCounterTree /> */}
-      <HookCounterFour />
+      {/* <HookCounterFour /> */}
+      {/* <HookCounter1 /> */}
+      <HookMouse />
     </div>
   )
 }
