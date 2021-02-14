@@ -16,6 +16,8 @@ function DataFething() {
             console.log(err)
         })
     },[idfromButtonClick])
+
+    
     const handleButton =()=> {
         setIdFromButtonClick(id)
     }
