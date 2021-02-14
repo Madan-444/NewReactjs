@@ -16,6 +16,7 @@ import UserGreeting from './Components/UserGreeting'
 import Welcome from './Components/Welcome'
 import Greet from './Greet'
 import ClassCounter from './HookComponents/ClassCounter'
+import CompoC from './HookComponents/CompoC'
 import DataFething from './HookComponents/DataFething'
 import HookCounter from './HookComponents/HookCounter'
 import HookCounter1 from './HookComponents/HookCounter1'
@@ -25,6 +26,7 @@ import HookCounterTwo from './HookComponents/HookCounterTwo'
 import HookMouse from './HookComponents/HookMouse'
 import IntervalHooks from './HookComponents/IntervalHooks'
 import MouseContainer from './HookComponents/MouseContainer'
+import { UserProvider } from './HookComponents/userContext'
 
 function App() {
   return (
@@ -55,7 +57,11 @@ function App() {
       {/* <HookMouse /> */}
       {/* <MouseContainer /> */}
       {/* <IntervalHooks /> */}
-    <DataFething />
+      {/* <DataFething /> */}
+      <UserProvider value = 'Madan Rijal' >
+        <CompoC />
+      </UserProvider>
+
 
     </div>
   )
