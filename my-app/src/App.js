@@ -16,12 +16,15 @@ import UserGreeting from './Components/UserGreeting'
 import Welcome from './Components/Welcome'
 import Greet from './Greet'
 import ClassCounter from './HookComponents/ClassCounter'
+import DataFething from './HookComponents/DataFething'
 import HookCounter from './HookComponents/HookCounter'
 import HookCounter1 from './HookComponents/HookCounter1'
 import HookCounterFour from './HookComponents/HookCounterFour'
 import HookCounterTree from './HookComponents/HookCounterTree'
 import HookCounterTwo from './HookComponents/HookCounterTwo'
 import HookMouse from './HookComponents/HookMouse'
+import IntervalHooks from './HookComponents/IntervalHooks'
+import MouseContainer from './HookComponents/MouseContainer'
 
 function App() {
   return (
@@ -49,7 +52,11 @@ function App() {
       {/* <HookCounterTree /> */}
       {/* <HookCounterFour /> */}
       {/* <HookCounter1 /> */}
-      <HookMouse />
+      {/* <HookMouse /> */}
+      {/* <MouseContainer /> */}
+      {/* <IntervalHooks /> */}
+    <DataFething />
+
     </div>
   )
 }
