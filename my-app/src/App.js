@@ -17,6 +17,8 @@ import Welcome from './Components/Welcome'
 import Greet from './Greet'
 import ClassCounter from './HookComponents/ClassCounter'
 import HookCounter from './HookComponents/HookCounter'
+import HookCounterFour from './HookComponents/HookCounterFour'
+import HookCounterTree from './HookComponents/HookCounterTree'
 import HookCounterTwo from './HookComponents/HookCounterTwo'
 
 function App() {
@@ -41,7 +43,9 @@ function App() {
       {/* <PostForm /> */}
       {/* <ClassCounter /> */}
       {/* <HookCounter /> */}
-      <HookCounterTwo />
+      {/* <HookCounterTwo /> */}
+      {/* <HookCounterTree /> */}
+      <HookCounterFour />
     </div>
   )
 }
