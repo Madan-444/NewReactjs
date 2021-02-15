@@ -34,6 +34,7 @@ import HookCompoA from './HookComponents/HookCompoA'
 import HookCompoB from './HookComponents/HookCompoB'
 import HOokCompoC from './HookComponents/HOokCompoC'
 import HookDataFetching1 from './HookComponents/HookDataFetching1'
+import HookDataFetching2 from './HookComponents/HookDataFetching2'
 
 // const initialState = 0
 // const reducer = (state,action)=> {
@@ -98,7 +99,8 @@ function App() {
       <HOokCompoC />
       </countContext.Provider> */}
       {/* <h2>Weocome from app Components</h2> */}
-      <HookDataFetching1 />
+      {/* <HookDataFetching1 /> */}
+      <HookDataFetching2 />
 
 
     </div>
