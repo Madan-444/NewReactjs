@@ -1,4 +1,4 @@
-import React, {useReducer} from 'react'
+import React from 'react'
 import ClassClick from './Components/ClassClick'
 import ClickCounter from './Components/ClickCounter'
 import Counter from './Components/Counter'
@@ -33,27 +33,28 @@ import CounterHooksThree from './HookComponents/CounterHooksThree'
 import HookCompoA from './HookComponents/HookCompoA'
 import HookCompoB from './HookComponents/HookCompoB'
 import HOokCompoC from './HookComponents/HOokCompoC'
+import HookDataFetching1 from './HookComponents/HookDataFetching1'
 
-const initialState = 0
-const reducer = (state,action)=> {
-    switch(action) {
-        case 'increment' : 
-            return state +1
-        case 'decrement' : 
-            return state -1
-        case 'reset' :
-            return initialState
-        default :
-            return state
-    }
+// const initialState = 0
+// const reducer = (state,action)=> {
+//     switch(action) {
+//         case 'increment' : 
+//             return state +1
+//         case 'decrement' : 
+//             return state -1
+//         case 'reset' :
+//             return initialState
+//         default :
+//             return state
+//     }
 
-}
+// }
 
-export const countContext = React.createContext()
+// export const countContext = React.createContext()
 
 function App() {
 
-  const [count,dispatch] = useReducer(reducer,initialState)
+  // const [count,dispatch] = useReducer(reducer,initialState)
   return (
     <div>
       {/* <h2>Hello Madan rijal Magar, Welcome</h2>*/}
@@ -90,12 +91,14 @@ function App() {
       {/* <HooksCounterTo /> */}
       {/* <CounterHooksThree /> */}
 
-      <h2>  Count - {count} </h2>
+      {/* <h2>  Count - {count} </h2>
       <countContext.Provider value= {{countState :count,countDispatch: dispatch}}>
       <HookCompoA />
       <HookCompoB />
       <HOokCompoC />
-      </countContext.Provider>
+      </countContext.Provider> */}
+      {/* <h2>Weocome from app Components</h2> */}
+      <HookDataFetching1 />
 
 
     </div>
