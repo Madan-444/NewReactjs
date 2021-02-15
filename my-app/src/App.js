@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useReducer} from 'react'
 import ClassClick from './Components/ClassClick'
 import ClickCounter from './Components/ClickCounter'
 import Counter from './Components/Counter'
@@ -25,11 +25,35 @@ import HookCounters from './HookComponents/HookCounters'
 import HookCounterTree from './HookComponents/HookCounterTree'
 import HookCounterTwo from './HookComponents/HookCounterTwo'
 import HookMouse from './HookComponents/HookMouse'
+import HooksCounterTo from './HookComponents/HooksCounterTo'
 import IntervalHooks from './HookComponents/IntervalHooks'
 import MouseContainer from './HookComponents/MouseContainer'
 // import { UserProvider } from './HookComponents/userContext'
+import CounterHooksThree from './HookComponents/CounterHooksThree'
+import HookCompoA from './HookComponents/HookCompoA'
+import HookCompoB from './HookComponents/HookCompoB'
+import HOokCompoC from './HookComponents/HOokCompoC'
+
+const initialState = 0
+const reducer = (state,action)=> {
+    switch(action) {
+        case 'increment' : 
+            return state +1
+        case 'decrement' : 
+            return state -1
+        case 'reset' :
+            return initialState
+        default :
+            return state
+    }
+
+}
+
+export const countContext = React.createContext()
 
 function App() {
+
+  const [count,dispatch] = useReducer(reducer,initialState)
   return (
     <div>
       {/* <h2>Hello Madan rijal Magar, Welcome</h2>*/}
@@ -62,7 +86,16 @@ function App() {
       {/* <UserProvider value = 'Madan Rijal' >
         <CompoC />
       </UserProvider> */}
-      <HookCounters />
+      {/* <HookCounters /> */}
+      {/* <HooksCounterTo /> */}
+      {/* <CounterHooksThree /> */}
+
+      <h2>  Count - {count} </h2>
+      <countContext.Provider value= {{countState :count,countDispatch: dispatch}}>
+      <HookCompoA />
+      <HookCompoB />
+      <HOokCompoC />
+      </countContext.Provider>
 
 
     </div>
