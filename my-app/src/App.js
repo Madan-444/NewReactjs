@@ -21,12 +21,13 @@ import DataFething from './HookComponents/DataFething'
 import HookCounter from './HookComponents/HookCounter'
 import HookCounter1 from './HookComponents/HookCounter1'
 import HookCounterFour from './HookComponents/HookCounterFour'
+import HookCounters from './HookComponents/HookCounters'
 import HookCounterTree from './HookComponents/HookCounterTree'
 import HookCounterTwo from './HookComponents/HookCounterTwo'
 import HookMouse from './HookComponents/HookMouse'
 import IntervalHooks from './HookComponents/IntervalHooks'
 import MouseContainer from './HookComponents/MouseContainer'
-import { UserProvider } from './HookComponents/userContext'
+// import { UserProvider } from './HookComponents/userContext'
 
 function App() {
   return (
@@ -58,9 +59,10 @@ function App() {
       {/* <MouseContainer /> */}
       {/* <IntervalHooks /> */}
       {/* <DataFething /> */}
-      <UserProvider value = 'Madan Rijal' >
+      {/* <UserProvider value = 'Madan Rijal' >
         <CompoC />
-      </UserProvider>
+      </UserProvider> */}
+      <HookCounters />
 
 
     </div>
