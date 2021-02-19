@@ -19,7 +19,7 @@ import React, { Component } from 'react'
         const {count} = this.state
         return (
             <div>
-                <button onClick={this.clickHandler}> You clicked {count} times </button>
+                <button onClick={this.clickHandler}>i have clicked {count} times </button>
             </div>
         )
     }
