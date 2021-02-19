@@ -14,7 +14,7 @@ function HookCounter1() {
         
         <div>
             <input type='text' value={name} onChange={(e)=> setName(e.target.value) } />
-            <button onClick = {()=> setCount(count +1)}> Click {count} times</button>
+            <button onClick = {()=> setCount(count +1)}> You Click {count} times</button>
         </div>
     )
 }
