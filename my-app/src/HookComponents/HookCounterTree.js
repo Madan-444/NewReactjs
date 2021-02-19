@@ -13,8 +13,8 @@ function HookCounterTree() {
             <label>Last Name </label>
             <input type='text' value = {name.lastname} onChange = {e => setName({...name,lastName:e.target.value})} />
 
-            <h2> Your first Name is - {name.firstName} </h2>
-            <h2> Your last Name is - {name.lastName} </h2>
+            <h2> My Name is - {name.firstName} </h2>
+            <h2> My Name is - {name.lastName} </h2>
             <h3> {JSON.stringify(name)} </h3>
         </div>
     )
