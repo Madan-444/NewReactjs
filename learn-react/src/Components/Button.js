@@ -5,7 +5,7 @@ function Button({color,text,addbutton}) {
     console.log(color)
     return (
         <div>
-            <button onClick={addbutton(["madan","milan","tirtha"])} className="btn" style={{backgroundColor: color}}>{text}</button>
+            <button onClick={()=>addbutton('Children')} className="btn" style={{backgroundColor: color}}> {text} </button>
         </div>
     )
 }

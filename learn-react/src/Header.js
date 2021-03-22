@@ -1,13 +1,17 @@
-import React from 'react'
+import React, {useState} from 'react'
 import PropTypes from 'prop-types'
 import Button from './Components/Button'
 
 
 function Header({title}) {
+    const [name,setName] = useState('')
 
     const addButton = (name)=> {
-        console.log(`Hello ${name[2]}`)
+        setName(name)
+        alert(`Say hello from ${name}`)
     }
+
+
     return (
         <header className='header'>
             <h1>{title}</h1>
