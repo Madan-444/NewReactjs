@@ -1,0 +1,14 @@
+.form {
+    margin-top: 5rem;
+}
+section#username {
+    padding: 2rem;
+
+}
+.submitForm button{
+    padding: .5rem;
+    margin-top: 1rem;
+    border: 0.2rem solid lightslategray;
+    width: 8rem;
+
+}
