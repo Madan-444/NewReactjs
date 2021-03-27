@@ -7,8 +7,9 @@ class FormHandling extends Component {
     
         this.state = {
              name: '',
-             password: '',
-             comment: ""
+             password: '232432',
+             comment: "",
+             language: ''
         }
     }
     handleName = (e)=> {
@@ -28,10 +29,16 @@ class FormHandling extends Component {
         })
         
     }
+    handleLanguage = (e)=> {
+        this.setState({
+            language: e.target.value
+        })
+    }
     handleSubmit = (event)=> {
         event.preventDefault();
         alert(`Your Name is ${this.state.name} and comment is ${this.state.comment}`)
         console.log("YOur comment is:",this.state.comment)
+        console.log(this.state.language)
     }
 
 
@@ -40,18 +47,26 @@ class FormHandling extends Component {
         const {name, password,comment} = this.state
         console.log("my Name is :", name)
         return (
-            <form className="form">
+            <form className="form" onSubmit={this.handleSubmit}>
                 <section id="username">
                     <label>Username:</label> <input type='text'  onChange={this.handleName} value={name} />
                 </section>
                 <section id="password">
                     <label>Password:</label> <input type='password'  onChange={this.handlePassowrd}  value={password}/>
                 </section>
+                <section className="select-language">
+                    <label>Knowledge About</label>
+                    <select onChange={this.handleLanguage}>
+                        <option>React Js </option>
+                        <option>Angular Js </option>
+                        <option>View Js </option>
+                    </select>
+                </section>
                 <section id="comment">
                     <label>Comment:</label> <input type='text'  onChange={this.handleComment}  value={comment}/>
                 </section>
                 <section className="submitForm">
-                    <button onSubmit={this.handleSubmit}>Submit</button>
+                    <button>Submit</button>
                 </section>
             </form>
         )
