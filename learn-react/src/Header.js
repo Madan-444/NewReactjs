@@ -1,21 +1,16 @@
 import React, {useState} from 'react'
 import PropTypes from 'prop-types'
-import Button from './Components/Button'
+import {useGlobalContext} from './Components/Hooks/UseContextApi'
 
 
 function Header({title}) {
-    const [name,setName] = useState('')
-
-    const addButton = (name)=> {
-        setName(name)
-        alert(`Say hello from ${name}`)
-    }
-
+    const {myname} = useGlobalContext()
 
     return (
         <header className='header'>
-            <h1>{title}</h1>
-            <Button color="yellow" text="Add Items" addbutton = {addButton} />
+            {/* <h1>{title}</h1>
+            <Button color="yellow" text="Add Items" addbutton = {addButton} /> */}
+            <h2>Hello {myname}</h2>
         </header>
     )
 }
