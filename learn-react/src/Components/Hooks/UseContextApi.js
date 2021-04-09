@@ -6,7 +6,8 @@ const AppContext = React.createContext()
 export const AppProvider = ({children}) => {
     const [myname,setmyname]= useState('Madan')
     return (
-        <AppContext.Provider value = {{myname}}>
+        <AppContext.Provider value = {{myname
+        ,setmyname}}>
             {children}
         </AppContext.Provider>
     )

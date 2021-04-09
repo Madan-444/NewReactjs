@@ -4,13 +4,13 @@ import {useGlobalContext} from './Components/Hooks/UseContextApi'
 
 
 function Header({title}) {
-    const {myname} = useGlobalContext()
+    const {myname,setmyname} = useGlobalContext()
 
     return (
         <header className='header'>
             {/* <h1>{title}</h1>
             <Button color="yellow" text="Add Items" addbutton = {addButton} /> */}
-            <h2>Hello {myname}</h2>
+            <h2 onClick={()=> setmyname('Pusendra')}> Hello {myname}</h2>
         </header>
     )
 }
