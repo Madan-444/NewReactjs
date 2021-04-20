@@ -1,16 +1,16 @@
 import React, {useState} from 'react'
 import PropTypes from 'prop-types'
-import {useGlobalContext} from './Components/Hooks/UseContextApi'
+import {useVisionCotext} from './Components/Hooks/UseContextApi'
 
 
 function Header({title}) {
-    const {myname,setmyname} = useGlobalContext()
+    const {myVison,setMyVision} = useVisionCotext()
 
     return (
         <header className='header'>
             {/* <h1>{title}</h1>
             <Button color="yellow" text="Add Items" addbutton = {addButton} /> */}
-            <h2 onClick={()=> setmyname('Pusendra')}> Hello {myname}</h2>
+            <h2 onClick={()=> setMyVision('To become a better person')}> Hello {myVison}</h2>
         </header>
     )
 }

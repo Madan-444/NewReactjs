@@ -1,18 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import {AppProvider,useGlobalContext} from './Components/Hooks/UseContextApi'
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import UseContextApi from './Components/Hooks/UseContextApi'
 
 ReactDOM.render(
   <React.StrictMode>
-<AppProvider>
-   <App />
-</AppProvider>
-   
+    <UseContextApi>
+      <App />
+    </UseContextApi>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
