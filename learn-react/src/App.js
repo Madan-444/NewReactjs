@@ -8,7 +8,8 @@ function App() {
       <h1>Ma Dan</h1>
       <ul className='nav-links'>
         <li>Home</li>
-        <li>Contacts</li>
+        <li>Projects</li>
+        <li>My Vlogs</li>
         <li>Services</li>
       </ul>
     </nav>
