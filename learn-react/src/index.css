@@ -19,7 +19,8 @@ body {
   background-color: hsl(0, 59%, 41%,0.8);
   width: 70%;
   margin: auto;
-  height: 30vh;
+  min-height: 30vh;
+  
 }
 .div-1 {
   background-color: teal;
@@ -50,7 +51,8 @@ body {
   }
   
 }
-.div-1 h2 {
+.div-1 h2,
+.div-3 h2 {
   color: wheat;
   padding: 1rem;
   display: flex;
@@ -82,7 +84,8 @@ body {
   }
   
 }
-.div-1 p {
+.div-1 p,
+.div-3 p {
   color: rgb(172, 162, 144);
   padding: 0 calc(1rem + 4vw); 
   display: flex;
@@ -96,6 +99,8 @@ body {
   /* transition-delay: 5s; */
   animation-timing-function: ease;
   animation-fill-mode: forwards;
+  animation-delay: 0.3s;
+  animation-fill-mode: backwards;
   position: relative;
 }
 @keyframes animate-div-2 {
@@ -112,10 +117,60 @@ body {
     opacity: 0.5;
   }
   100% {
-    background-color: rgb(21, 136, 136);
+    background-color: rgb(38, 165, 165);
     transform: rotateY(360deg);
     left: 0;
     opacity: 1;
+  }
+  
+}
+.div-2 {
+  padding: 10px calc(1rem + 3vw);
+}
+.div-2__paragraph {
+  display: flex;
+  justify-content: space-between;
+}
+.div-2__paragraph:first-child h2 {
+  color: rgb(238, 208, 208);
+  padding: 1rem 1rem 1rem 0;
+}
+.div-2__paragraph:first-child p {
+  color: rgb(77, 56, 56);
+  font-size: 1.2rem;
+  padding: 0 calc(1rem + 1vw) 0 0;
+}
+.div-3 {
+  background-color: rgb(39, 49, 59);
+  animation-name: animate-div-3;
+  animation-duration: 3s;
+  animation-fill-mode: backwards;
+}
+@keyframes animate-div-3 {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  50% {
+    background-color: rgb(22, 105, 105);
+    transform: scale(1.1);
+    opacity: 0.5;
+  }
+  100% {
+    background-color: rgb(39, 49, 59);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.div-4 {
+  background-color: rgb(126, 99, 99);
+}
+@media screen and (max-width: 700px) {
+  .div-2__paragraph {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   
 }
